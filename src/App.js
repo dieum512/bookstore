@@ -1,7 +1,7 @@
-import Nav from "./components/Nav";
-import DisplayBooks from "./components/books/DisplayBooks";
-import Categories from "./components/Categories";
-import { Route, Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import Nav from './components/Nav';
+import DisplayBooks from './components/books/DisplayBooks';
+import Categories from './components/Categories';
 
 function App() {
   return (
