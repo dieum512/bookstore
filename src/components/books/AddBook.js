@@ -23,22 +23,22 @@ const AddBook = () => {
   return (
     <form onSubmit={handleSubmit}>
       <h2>ADD NEW BOOK</h2>
-        <input
-          id="title"
-          type="text"
-          name="Add"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          placeholder="Book title"
-        />
-        <input
-          id="author"
-          type="text"
-          name="Add"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-          placeholder="Author"
-        />
+      <input
+        id="title"
+        type="text"
+        name="Add"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="Book title"
+      />
+      <input
+        id="author"
+        type="text"
+        name="Add"
+        value={author}
+        onChange={(e) => setAuthor(e.target.value)}
+        placeholder="Author"
+      />
       <button type="submit">Add</button>
     </form>
   );
