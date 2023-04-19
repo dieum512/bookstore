@@ -30,6 +30,7 @@ const AddBook = () => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Book title"
+        required
       />
       <input
         id="author"
@@ -38,6 +39,7 @@ const AddBook = () => {
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
         placeholder="Author"
+        required
       />
       <button type="submit">Add</button>
     </form>
