@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../../redux/books/booksSlice';
+import { addNewBook, addBook } from '../../redux/books/booksSlice';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -16,6 +16,7 @@ const AddBook = () => {
       category: 'Nonfiction',
     };
     dispatch(addBook(newBook));
+    dispatch(addNewBook(newBook));
     setAuthor('');
     setTitle('');
   };
@@ -30,6 +31,7 @@ const AddBook = () => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Book title"
+        required
       />
       <input
         id="author"
@@ -38,6 +40,7 @@ const AddBook = () => {
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
         placeholder="Author"
+        required
       />
       <button type="submit">Add</button>
     </form>
