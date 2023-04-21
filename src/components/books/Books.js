@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 const Book = ({
   category, title, author, remove,
 }) => (
-  <>
-    <p>{category}</p>
-    <h2>{title}</h2>
-    <p>{author}</p>
+  <div className="books-section">
+    <p className="book-category">{category}</p>
+    <h2 className="book-title">{title}</h2>
+    <p className="book-author">{author}</p>
     <button type="button" onClick={remove}>Delete</button>
-  </>
+  </div>
 );
 
 Book.propTypes = {
