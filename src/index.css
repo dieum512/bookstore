@@ -58,7 +58,7 @@ a {
 
 /* books section */
 .books-container {
-  margin: 0px 15% 20px 15%;
+  margin: 0 15% 20px 15%;
   background: #fff;
   border: 2px solid #e8e8e8;
   display: flex;
