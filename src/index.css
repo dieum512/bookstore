@@ -160,10 +160,29 @@ a {
   transition: 0.4s ease-in-out;
 }
 
+.categories button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #0290ff;
+  border: 2px solid #0290ff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  font-size: 20px;
+}
+
+.categories button:hover {
+  background-color: #052741;
+  border: 2px solid #052741;
+}
+
 .information button:hover {
   background-color: #052741;
   border: 2px solid #052741;
 }
+
+
+
 
 /* form section */
 .form {
@@ -208,20 +227,4 @@ a {
 
 .categories {
   margin: 20px 15%;
-}
-
-.categories button {
-  margin-top: 20px;
-  padding: 15px 30px;
-  color: #fff;
-  background-color: #0290ff;
-  border: 2px solid #0290ff;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-  font-size: 20px;
-}
-
-.categories button:hover {
-  background-color: #052741;
-  border: 2px solid #052741;
 }
