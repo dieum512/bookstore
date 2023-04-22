@@ -1,27 +1,227 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;500;700;800&display=swap');
+
+* {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+body {
+  background: #fafafa;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* navbar */
+.nav {
+  display: flex;
+  background-color: #fff;
+  padding: 20px 15%;
+  align-items: center;
+  gap: 40px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.main-title {
+  width: 15rem;
+  height: 2.313rem;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #018aff;
+}
+
+.links-container {
+  display: flex;
+  gap: 40px;
+}
+
+.books-link .categories-link {
+  width: 3.688rem;
+  height: 1rem;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+}
+
+/* books section */
+.books-container {
+  margin: 0 15% 20px 15%;
+  background: #fff;
+  border: 2px solid #e8e8e8;
+  display: flex;
+}
+
+.books-section {
+  padding: 20px;
+  width: 55%;
+}
+
+.book-category {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.book-title {
+  height: 1.813rem;
+  margin: 0.188rem 2.125rem 0 0;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+}
+
+.book-author {
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: "RobotoSlab", serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #5088ba;
+  margin-bottom: 15px;
+}
+
+.buttons button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  margin-right: 10px;
+  color: #0290ff;
+}
+
+.completed-section {
+  margin: 40px 0;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  border-right: 1px solid #7d7d7d;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #5088ba;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.percantage {
+  font-size: 2rem;
+}
+
+.completed {
+  height: 1.125rem;
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
+.information {
+  width: 30%;
+  padding: 10px 40px;
+}
+
+.information h3 {
+  height: 1.125rem;
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.infrmation p {
+  height: 1.313rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.information button {
+  border: 2px solid #0290ff;
+  background-color: #0290ff;
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.4s ease-in-out;
+}
+
+.categories button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #0290ff;
+  border: 2px solid #0290ff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  font-size: 20px;
+}
+
+.categories button:hover {
+  background-color: #052741;
+  border: 2px solid #052741;
+}
+
+.information button:hover {
+  background-color: #052741;
+  border: 2px solid #052741;
+}
+
+/* form section */
+.form {
+  border-top: 2px solid #e8e8e8;
+  margin: 20px 15%;
+}
+
+.add-book-title {
+  color: #7d7d7d;
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+}
+
+.form input {
+  padding: 10px;
+  border: 2px solid #e8e8e8;
+  margin-right: 2.5%;
+}
+
+.title-input {
+  width: 55%;
+}
+
+.author-input {
+  width: 20%;
+}
+
+.form .add-book-btn {
+  padding: 10px;
+  width: 15%;
+  color: #fff;
+  background-color: #0290ff;
+  border: 2px solid #0290ff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.form .add-book-btn:hover {
+  background-color: #052741;
+  border: 2px solid #052741;
+}
+
+.categories {
+  margin: 20px 15%;
 }

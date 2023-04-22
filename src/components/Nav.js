@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => (
   <>
-    <nav>
-      <h1>Bookstore CMS</h1>
-      <ul>
-        <li><Link to="/">Books</Link></li>
-        <li><Link to="/categories">Categories</Link></li>
+    <nav className="nav">
+      <h1 className="main-title">Bookstore CMS</h1>
+      <ul className="links-container">
+        <li className="books-link"><Link to="/">BOOKS</Link></li>
+        <li className="categories-link"><Link to="/categories">CATEGORIES</Link></li>
       </ul>
     </nav>
   </>
